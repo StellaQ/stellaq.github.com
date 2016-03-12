@@ -20,3 +20,4 @@ routeApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/angulardemoone',
             templateUrl: 'tpl/3angulardemos/01angularshoppingcart/index.html'
         })
+});
