@@ -1,0 +1,199 @@
+body,p,ul,input,h4,textarea{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+
+body{
+	background: #9ef5f2;
+}
+.container{
+	width: 1000px;
+	/* height: 620px; */
+	margin: 20px auto 0;
+}
+
+.leftSide{
+	width: 600px;
+	height: 600px;
+	margin: 10px 10px;
+	background: #fff;
+	float: left;
+}
+.rightSide{
+	width: 370px;
+	/* height: 600px; */
+	margin: 10px 10px 10px 0;
+	background: #fff; 
+	float: left;
+}
+
+/* 左部分留言板 */
+.leftSide #list{
+	width: 560px;
+	height: 530px;
+	padding: 8px;
+	margin: 10px;
+	border: 1px solid #cce7f1;
+}
+.leftSide #list li{
+	width: 560px;
+	height: 95px;
+	padding: 5px 0;
+	border-bottom: 1px solid #cce7f1;
+}
+.leftSide #list li h4{
+	width: 120px;
+	height: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: '微软雅黑';
+}
+.leftSide #list li p{
+	width: 500px;
+	height: 56px;
+	font-size: 12px;
+	line-height: 14px;
+	margin:5px 20px 0 40px;
+	font-family: '微软雅黑';
+}
+.leftSide #list li span{
+	font-size: 12px;
+	line-height: 14px;
+	color: #9b9b9b;
+}
+/* 左部分翻页按钮 */
+.leftSide #flip{
+	margin-right: 11px;
+	float: right;
+}
+.leftSide #flip li{
+	padding: 2px;
+	border: 1px solid #cce7f1;
+	margin-left: 5px;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	cursor: pointer;
+}
+
+/* 右部分登录 */
+.rightSide #signIn{
+	width: 330px;
+	padding: 8px;
+	margin: 10px;
+	border: 1px solid #cce7f1;
+	/* display: none; */
+}
+.rightSide #signIn p{
+	width: 330px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	background: #1ba6ff;
+	font-weight: bold;
+}
+.rightSide #loginEmail,#loginPw{
+	width: 330px;
+	height: 26px;
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 15px;
+}
+.rightSide #signIn span{
+	font-size: 14px;
+	line-height: 20px;
+	color: #ea002a;
+	display: none;
+}
+.rightSide #signIn #btnLogin{
+	margin-right: 300px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+/* 右部分注册 */
+.rightSide #signUp{
+	width: 330px;
+	padding: 8px;
+	margin: 10px;
+	border: 1px solid #cce7f1;
+	/* display: none; */
+}
+.rightSide #signUp p{
+	width: 330px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	background: #1ba6ff;
+	font-weight: bold;
+}
+.rightSide #regEmail,#regPw,#regName{
+	width: 330px;
+	height: 26px;
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 15px;
+}
+.rightSide #signUp span{
+	font-size: 14px;
+	line-height: 20px;
+	color: #ea002a;
+	display: none;
+}
+.rightSide #signUp #btnReg{
+	margin-right: 300px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+/* 右部分已登录 */
+.rightSide #yidenglu{
+	width: 330px;
+	height: 26px;
+	padding: 8px;
+	margin: 10px;
+	border: 1px solid #cce7f1;
+	display: none; 
+}
+.rightSide #yidenglu h4{
+	width: 100px;
+	height: 26px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: '微软雅黑';
+	float: left;
+}
+.rightSide #yidenglu input{
+	float: right;
+	cursor: pointer;
+}
+/* 右部分用户留言 */
+.rightSide #note{
+	width: 330px;
+	height: 130px;
+	padding: 8px;
+	margin: 10px;
+	border:1px solid #cce7f1;
+	display: none; 
+}
+.rightSide #note h4{
+	font-size: 14px;
+	line-height: 16px;
+	font-family: '微软雅黑';
+	padding-bottom:5px; 
+}
+.rightSide #note textarea{
+	width: 330px;
+	height: 80px;
+	resize:none;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: '微软雅黑';
+}
+.rightSide #note input{
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+}

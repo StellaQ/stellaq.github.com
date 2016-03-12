@@ -1,0 +1,80 @@
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.clean{zoom:1;}
+.clean:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container{
+	width: 870px; 
+	height: 320px;
+	border: 2px solid #12daf2;
+	position: relative;
+}
+
+#menuPart{ 
+	width: 150px; 
+	height: 320px; 
+	float: left;
+}
+#menuPart li{
+	width: 150px; 
+	height: 78px; 
+	margin-bottom: 2px;
+	background: #e7e7e7;
+	font-size: 20px;
+	line-height: 78px;
+	text-align: center;
+	cursor: pointer;
+}
+#menuPart li:hover{
+	opacity: 0.5;
+}
+#menuPart .active{
+	background:#fff;
+	color: #12daf2;
+}
+
+.imgPart{ 
+	width: 720px; 
+	height: 320px; 
+	float: left;
+}
+.imgPart #img{
+	width: 720px; 
+	height: 320px; 
+}
+		
+#detailPart{ 
+	width: 720px; 
+	height: 20px; 
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#detailPart li{ 
+	width: 238px;
+	height: 20px; 
+	margin-right: 2px;
+	background: #5a5a52;
+	opacity: 0.8;
+	font-size: 14px;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	float:left;
+	cursor: pointer;
+}
+#detailPart li:hover{
+	background: #ef3163;
+}
+#detailPart .active2{
+	background: #ef3163;
+}

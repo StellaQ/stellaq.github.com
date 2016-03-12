@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+input{ padding:0; margin:0;}
+
+#content{width:289px; height:594px; position:relative;}
+#imgBg{ width:289px; height:594px;}
+#chat{ width:242px; height:370px; background:#fff; position:absolute; left:26px; top:87px; overflow:auto;}
+#chat img{ width:26px; height:27px;}
+#chat span{ font-size:20px; line-height:22px; padding:2px; margin:2px; }
+
+#controler{ width:242px; height:52px; background:#f7f7f7; border-top:1px solid #bdcec6; border-bottom:1px solid #bdcec6;
+position:absolute; left:26px; bottom:84px;}
+#who{ width:28px; height:34px; margin:7px 5px 5px 4px; border:1px solid #ded6e7; border-radius:3px; background:url(img/5.PNG) no-repeat;
+float:left;}
+#text{ width:139px; height:34px; margin-top:7px; border:1px solid #ded6e7; border-radius:3px; font-size:20px;
+float:left;}
+#btn{ width:44px; height:22px; border:none; margin:14px 0 0 5px; font-size:20px; font-family:'宋体'; color:#a0a0a4; background:none;
+float:left;}
+
+.fr{ float:right;}
+.frS{ float:right; background:green; color:white; }
+.fl{ float:left;}
+.flS{ float:left; background:grey; color:black;}
+</style>
+<script>
+window.onload = function(){
+	var oWho = document.getElementById('who');
+	var oText = document.getElementById('text');
+	var oBtn = document.getElementById('btn');
+	
+	var oChat = document.getElementById('chat');
+	var onOff = true;     /*默认为true，用右5PNG*/
+	var strL = null;
+	var strR = null;
+	
+	oWho.onclick = function(){
+	    if( onOff){
+		   oWho.style.background = 'url(img/6.PNG)';
+		   onOff = false;
+		}else{
+		   oWho.style.background = 'url(img/5.PNG)';
+		   onOff = true;
+		}
+	}
+	
+	oBtn.onclick = function(){
+	    if( onOff){        /*为true时用右5PNG*/
+			strR = 
+			'<div style="width:226px; float:right;">'+
+			   '<img class="fr" src="img/5.PNG">'+
+	           '<div style="width:200px; float:left" >'+
+			        '<span class="frS">'+ oText.value +'</span>'+
+			   '</div>'+
+			'</div>';
+		    oChat.innerHTML = strR + oChat.innerHTML;  
+		}else{
+			strL = 
+			'<div style="width:226px; float:left;">'+
+			   '<img class="fl" src="img/6.PNG">'+
+	           '<div style="width:200px; float:left" >'+
+			        '<span class="flS">'+ oText.value +'</span>'+
+			   '</div>'+
+			'</div>';
+		    oChat.innerHTML = strL +oChat.innerHTML;	
+		}
+	   
+	  
+	  
+	};
+	 
+}
+</script>
+</head>
+
+<body>
+  <div id="content">
+     <img id="imgBg" src="img/7.jpg" />
+     <div id="chat"></div>
+     <div id="controler">
+        <input id="who" type="button" />
+        <input id="text" type="text" />
+        <input id="btn" value="发送" type="button" />
+     </div>
+  </div>
+</body>
+</html>

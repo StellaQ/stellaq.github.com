@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>留言板</title>
+		<link rel="stylesheet" type="text/css" href="1.css" />
+		<link rel="shortcut icon" href="img/msg.ico" />
+		<script type="text/javascript" src="1.js"></script>
+		<script type="text/javascript" src="ajax.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="leftSide">
+				<ul id="list">
+					<!-- 
+					<li>
+						<h4>名字data.name</h4>
+						<p>用户留言data.message</p>
+						<span>2016.22.34data.regdate</span>
+					</li>
+					<li>
+						<h4>名字data.name</h4>
+						<p>用户留言data.message</p>
+						<span>2016.22.34data.regdate</span>
+					</li>
+					<li>
+						<h4>名字data.name</h4>
+						<p>用户留言data.message</p>
+						<span>2016.22.34data.regdate</span>
+					</li>
+					<li>
+						<h4>名字data.name</h4>
+						<p>用户留言data.message</p>
+						<span>2016.22.34data.regdate</span>
+					</li>
+					<li>
+						<h4>名字data.name</h4>
+						<p>用户留言data.message</p>
+						<span>2016.22.34data.regdate</span>
+					</li> -->
+				</ul>
+				<ul id="flip">
+					<li>上一页</li>
+					<li>下一页</li>
+				</ul>
+			</div>
+			<div class="rightSide">
+				<div id="signIn">
+					<p>登录</p>
+					<input id="loginEmail" type="text" placeholder="请输入登录邮箱"/>
+					<span></span>
+					<input id="loginPw" type="password" placeholder="请输入密码"/>
+					<span></span>
+					<input id="btnLogin" type="button" value="登录" />
+				</div>
+				<div id="signUp">
+					<p>注册</p>
+					<input id="regEmail" type="text" placeholder="请输入邮箱地址"/>
+					<span></span>
+					<input id="regPw" type="password" placeholder="6-16位密码，区分大小写，不能用空格"/>
+					<span></span> 
+					<input id="regName" type="text" placeholder="昵称为2-18位，中英文、数字及下划线"/>
+					<span></span>
+					<input id="btnReg" type="button" value="注册" />
+				</div>
+				<div id="yidenglu">
+					<h4></h4>
+					<input id="btnLogout" type="button" value="退出" >
+				</div>
+				<div id="note">
+					<h4>你的留言</h4>
+					<textarea id="text"></textarea>
+					<input id="btnAdd" type="button" value="加上去" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

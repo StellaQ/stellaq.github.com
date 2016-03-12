@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+input{ padding:0; margin:0;}
+
+#content{width:289px; height:594px; position:relative;}
+#imgBg{ width:289px; height:594px;}
+#chat{ width:242px; height:370px; background:#fff; position:absolute; left:26px; top:87px; overflow:auto;}
+#chat img{ width:26px; height:27px;}
+#chat span{ font-size:20px; line-height:22px; padding:2px; margin:2px; }
+
+#controler{ width:242px; height:52px; background:#f7f7f7; border-top:1px solid #bdcec6; border-bottom:1px solid #bdcec6;
+position:absolute; left:26px; bottom:84px;}
+#who{ width:28px; height:34px; margin:7px 5px 5px 4px; border:1px solid #ded6e7; border-radius:3px; background:url(img/5.PNG) no-repeat;
+float:left;}
+#text{ width:139px; height:34px; margin-top:7px; border:1px solid #ded6e7; border-radius:3px; font-size:20px;
+float:left;}
+#btn{ width:44px; height:22px; border:none; margin:14px 0 0 5px; font-size:20px; font-family:'宋体'; color:#a0a0a4; background:none;
+float:left;}
+
+.fr{ float:right;}
+.frS{ float:right; background:green; color:white; }
+.fl{ float:left;}
+.flS{ float:left; background:grey; color:black;}
+</style>
+</head>
+
+<body>
+  <div id="content">
+     <img id="imgBg" src="img/7.jpg" />
+     <div id="chat"> 
+       
+       <div style="width:226px; float:left;"> <!-- 每个对话框长度为226px,则下一个div不会并行/考虑到滚动条的挤压,226px适合/每个div都float,下一个div里的img不会浮上来-->
+         <img class="fl" src="img/6.PNG"> <!--宽26px-->
+         <div style="width:200px; float:left" > <!-- 此处div用来限制span宽度最大为200px，否则会把img挤出去/同时高度继承了子元素span的最大高度-->
+             <span class="flS">抽查猜猜从曹操曹操曹操传曹操曹操传猜</span><!-- 内联元素由内容撑开宽高，宽度最大为父级元素的宽度200px-padding2px-margin2px=192px-->
+         </div>
+       </div>
+       
+       <div style="width:242px; float:right;">
+         <img class="fr" src="img/5.PNG">
+         <div style="width:208px; float:right" >
+             <span class="frS" >抽查猜猜猜抽查猜猜从曹操曹操曹操传曹操曹操传猜</span>
+         </div>
+       </div>
+       
+     </div>
+     <div id="controler">
+        <input id="who" type="button" />
+        <input id="text" type="text" />
+        <input id="btn" value="发送" type="button" />
+     </div>
+  </div>
+</body>
+</html>

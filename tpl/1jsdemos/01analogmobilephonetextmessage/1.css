@@ -1,0 +1,102 @@
+p{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{zoom:1;}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container{
+	width:289px;
+	height:594px;
+	position: relative;
+}
+.container img{
+	width:289px;
+	height:594px;
+}
+
+.contentOne{
+	width: 242px;
+	height: 370px;
+	background: #fff;
+	position: absolute;
+	left: 25px;
+	top: 87px;
+	overflow: auto;
+}
+
+.ctr{
+	width: 242px;
+	height: 36px;
+	padding: 8px 0 8px 0;
+	background: #f7f7f7;
+	border-top: 1px solid #bdcec6;
+	border-bottom: 1px solid #bdcec6;
+	position: absolute;
+	left: 25px;
+	bottom: 84px;
+}
+.ctr div{
+	width: 30px;
+	height: 34px;
+	margin: 0 4px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.ctr #pic{
+	width: 30px;
+	height: 34px;
+}
+.ctr #said{
+	width: 138px;
+	height: 36px;
+}
+.ctr #btn{
+	width: 50px;
+	height: 36px;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	color: #a0a0a4;
+	padding-left: 6px;
+	cursor: pointer;
+}
+
+.contentOne img{
+	width: 26px;
+	height: 26px;
+}
+.setOne{
+	margin-top: 5px;
+	width: 220px;
+} 
+.setTwo{
+	width: 180px;
+}
+.divOne{
+	padding: 5px;
+	background:#ded6e7;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+.divTwo{
+	padding: 5px;
+	background: #21c618;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}

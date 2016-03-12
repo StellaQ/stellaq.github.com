@@ -1,0 +1,90 @@
+p,ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container{
+	width: 680px;
+	height: 580px;
+	padding: 0 13px;
+	background: #24e1f2;
+	position: relative;
+}
+.container p{
+	font-size: 24px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.container .box{
+	width: 680px;
+	height: 460px;
+	position: relative;
+}
+.container .box img{
+	width: 680px;
+	height: 460px;
+}
+.container .box a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #f6da40;
+	border-radius: 25px;
+	font-size: 26px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.container .box a:hover{
+	opacity: 1;
+}
+.container .box #prev{
+	left: 30px;
+	top: 200px;
+}
+.container .box #next{
+	right: 30px;
+	top: 200px;
+}
+
+.container ul{
+	position: absolute;
+	left: 280px;
+	bottom: 36px;
+}
+.container ul li{
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+	background: #94a59c;
+	border-radius: 8px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+.container ul .active{
+	background: #efbd00;
+}
+.container ul div{
+	display: none;
+	width: 122px;
+	height: 82px;
+	position: absolute;
+	left: -55px;
+	bottom: 30px;
+}
