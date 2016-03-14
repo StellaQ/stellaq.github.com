@@ -1,5 +1,5 @@
 # stellaq.github.com
-[{
+#[{
 	a:'js demos',
 	1:'模拟手机发送短信',
 	2:'带缩略图的图片切换',
