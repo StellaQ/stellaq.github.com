@@ -2,22 +2,22 @@ var str = '',
 data = [
     [
         { title : 'js demos'},
-        { url : 'a/1/index.html', title : 'analog mobile phone text message'},
-        { url : 'a/2/index.html', title : 'switch images with thumbnail'},
-        { url : 'a/3/index.html', title : 'switch multiple sets of images'},
-        { url : 'a/4/index.html', title : 'select cards carry set of cards'},
-        { url : 'a/5/index.html', title : 'baidu library score'},
-        { url : 'a/6/index.html', title : 'application of string method'},
-        { url : 'a/7/index.html', title : 'button control picture scroll up and down'},
+        { url : 'a/1/index.html', title : '模拟手机发送短信'},
+        { url : 'a/2/index.html', title : '带缩略图的图片切换'},
+        { url : 'a/3/index.html', title : '切换多组图片'},
+        { url : 'a/4/index.html', title : '选项卡内套选项卡'},
+        { url : 'a/5/index.html', title : '模拟百度评分'},
+        { url : 'a/6/index.html', title : '查找替换文字'},
+        { url : 'a/7/index.html', title : '按钮控制图片上下滚动'},
     ],
     [
         { title : 'ajax php'},
-        { url : 'b/1/index.html', title : 'the waterfall flow' },
+        { url : 'b/1/index.html', title : '瀑布流' },
         { url : 'b/2/index.html', title : 'message board'},
     ],
     [
         { title : 'angular'},
-        { url : 'c/1/index.html', title : '单元行上鼠标悬停提示' },
+        { url : 'c/1/index.html', title : 'angular shopping cart' },
     ]
 ];
 for(var i = 0; i < data.length; i++){
