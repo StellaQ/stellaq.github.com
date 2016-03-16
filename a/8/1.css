@@ -1,0 +1,84 @@
+p,ul,input{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container{
+	width: 312px;
+	border: 2px solid #1adced;
+}
+
+#list{
+	width: 312px;
+	border-bottom: 1px solid #dedede;
+}
+#list li{
+	width: 312px;
+	height: 30px;
+	overflow: hidden;
+}
+#list .active1{
+	background: #cef8f8;
+}
+#list .active2{
+	background: #efefef;
+}
+
+#list li .boxOne{
+	width: 13px;
+	height: 13px;
+	padding: 9px 11px 9px 17px;
+	float: left;
+}
+#list li .boxTwo{
+	width: 163px;
+	height: 30px;
+	float: left;
+}
+#list li .boxThree{
+	width: 105px;
+	height: 30px;
+	float: left;
+}
+#list li .boxTwo p,#list li .boxThree p{
+	font-size: 12px;
+	line-height: 30px;
+}
+
+#ctrl{
+	width: 312px;
+	height: 33px;
+}
+#ctrl .ctrOne{
+	width: 13px;
+	height: 13px;
+	padding: 12px 11px 9px 17px;
+	float: left;
+}
+#ctrl .ctrTwo{
+	width: 44px;
+	height: 30px;
+	margin-top: 3px;
+	float: left;
+}
+#ctrl .ctrTwo p{
+	font-size: 12px;
+	line-height: 30px;
+}
+#ctrl .ctrThree{
+	width: 65px;
+	height: 26px;
+	margin: 5px 9px 2px 0;
+	float: left;
+}
