@@ -1,36 +1,54 @@
-body,ul,p{
+a:hover{
+	color: #ff4400;
+}
+
+.orange{
+	color: #ff4400;
+}
+
+
+ul{
 	padding: 0;
-	margin: 0;
+	margin:0;
 }
 li{
 	list-style: none;
 }
-
-#list{
-	width:1000px; 
-	margin:20px auto  0;
+#fixedBox{
+	height: 60px;
+	background: #e5e5e5;
+}
+#fixedBox div{
+	margin-right: 110px;
+}
+#fixedBox li{
+	height: 40px;
+	padding: 10px;
+	line-height: 40px;
+	float: right;
+}
+#fixedBox li span{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ff4400;
+}
+#fixedBox .orangeLi{
+	height: 60px;
+	background: #ff4400;
+	font-size: 20px;
+	text-align: center;
+}
+#fixedBox .orangeLi a{
+	color: #fff;
 }
 
-#list li{
-	float: left;
-	width: 200px;
-	margin-left: 10px;
-	margin-right: 10px;
-	background: #dff2f3;
+.container{
+	margin-bottom: 40px;
 }
-#list li div img{
-	/* width: 200px; */
-	/* height: 200px; */
-	vertical-align: top;
+table tbody span{
+	cursor: pointer;
 }
-#list li div p{
-	width: 200px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 14px;
-	font-family: '微软雅黑';
-	text-align:center;
-	background: #df3a34;
-	margin-bottom: 10px;
-	overflow: hidden;
+table tbody a{
+	color: #000;
+	font-size: 12px;
 }

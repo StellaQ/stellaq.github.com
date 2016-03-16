@@ -1,24 +1,55 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>瀑布流</title>
+		<title>angular shopping cart</title>
+		<link rel="stylesheet" type="text/css" href="../framework/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="1.css" />
-		<script type="text/javascript" src="1.js"></script>
-		<script type="text/javascript" src="ajax.js"></script>
 	</head>
-	<body>
-		<ul id="list">
-			<li>
-				<!-- 
+	<body ng-app="shopApp">
+		<div class="container" ng-controller="shopCtr">
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th colspan="2" class="col-md-2">商品信息</th>
+						<th class="col-md-1">单价</th>
+						<th class="col-md-1">数量</th>
+						<th class="col-md-1">金额</th>
+						<th class="col-md-1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in data">
+						<td><img src="{{item.picSrc}}" /></td>
+						<td><a href="#" title="{{item.des}}">{{item.des}}</a></td>
+						<td><strong>{{item.price}}</strong></td>
+						<td>
+							<div class="btn-group" role="group">
+								<div class="input-group">
+									<span class="input-group-addon" ng-click="reduce(item.id)">-</span>
+									<input type="text" class="form-control" value="{{item.quantity}}">
+									<span class="input-group-addon" ng-click="add(item.id)">+</span>
+								</div>
+							</div>
+						</td>
+						<td class="orange"><strong>{{item.price*item.quantity}}</strong></td>
+						<td>
+							<button type="button" class="btn btn-danger" ng-click="remove(item.id)">删除</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<nav id="fixedBox" class="navbar navbar-default navbar-fixed-bottom">
 				<div>
-					<img src="img/1.jpg" />
-					<p>消失的爱人</p>
-				</div> 
-				-->
-			</li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+					<ul>
+						<li class="orangeLi"><a href="#">结算</a></li>
+						<li>合计(不含运费)：<span>￥{{totalPrice()}}</span></li>
+						<li>已选中商品<span>{{amount()}}</span>件</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<script type="text/javascript" src="../framework/angular/angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>

@@ -11,10 +11,6 @@
 			8:'模拟百度音乐选中'
 		},
 		{
-			b:'ajax php',
-			1:'瀑布流'
-		},
-		{
-			c:'angular',
+			b:'angular',
 			1:'angular shopping cart'
 		}]
